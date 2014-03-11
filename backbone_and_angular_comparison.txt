@@ -1,0 +1,63 @@
+Backbone.js versus Angular.js
+
+Backbone Background http://backbonejs.org/
+
+http://www.infoq.com/articles/backbone-vs-angular (this site has nice diagrams
+of the relation between MVC in Angular and Backbone which I found very
+helpful.)
+
+http://readwrite.com/2014/02/06/angular-backbone-ember- best-javascript-
+framework-for-you#awesm=~oy9SKUwUxJNYEy
+
+https://en.wikipedia.org/wiki/Backbonejs
+
+
+
+Backbone.js was created by Jeremy Ashkenas, who also created CoffeeScript.
+Backbone is pretty widely used, almost as much as Angular. Backbone framework
+is used by Twitter, Foursquare, airbnb, and LinkedIn Mobile, among others.
+Also, it was used to build several music apps including Soundcloud, Pitchfork,
+and Pandora. Backbone is very small compared to Angular. It depends on only
+one JavaScript libary versus Angular that has several JS libraries. Backbone
+is very lightweight, which makes it best suited for fast, responsive apps
+(especially one page apps), whereas Angular is better suited to larger apps.
+Many people use Backbone when working with lightweight backend frameworks like
+Sinatra.
+
+Backbone Models represent data that can be created, validated, destroyed, and
+saved to the server. When a UI action causes an attribute of a model to
+change, the model triggers a 'change' event. The Views that display the
+Model's state are notified of the change and re-render themselves with the new
+information. This ultimately means that in a Backbone app, the developer
+doesn't need to write code that looks into the DOM to find the element with a
+specific id and update the HTML manually. Backbone's pitch is that it gives
+developers freedom to design the full experience of their website instead of
+having to conform to libraries like Angular that require that a site be
+written to that framework's default behaviors. Detractors of Backbone say that
+because there is so much freedom that less experienced devs often rely on too
+much boilerplate code. In regards to templating, Backbone uses Handlebars and
+Mustache the most often, although any templating engine can be used
+theoretically. Backbone also works very easily with Rails. There are some
+minor changes that need to be made if a dev is using Rails 3.1 or earlier, but
+it is not a barrier to using Backbone with Rails
+
+
+The official Backbone page includes a good explanation of how to relate the
+pieces of Backbone in terms of the Rails definition of MVC.
+
+Backbone.Model – Like a Rails model minus the class methods. Wraps a row of
+data in business logic.
+
+Backbone.Collection – A group of models on the client-
+side, with sorting/filtering/aggregation logic.
+
+Backbone.Router – Rails
+routes.rb + Rails controller actions. Maps URLs to functions.
+
+Backbone.View –
+A logical, re-usable piece of UI. Often, but not always, associated with a
+model.
+
+Client-side Templates – Rails .html.erb views, rendering a chunk of
+HTML.
+
